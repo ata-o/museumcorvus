@@ -52,6 +52,7 @@ TagManager:
   - KarakoncolosStatue
   - Door
   - SlowArea
+  - SlowAreaEnd
   layers:
   - Default
   - TransparentFX

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
+using UnityEngine.SceneManagement;
 
 
 public class MicrowaveOpen : MonoBehaviour
@@ -29,23 +30,21 @@ public class MicrowaveOpen : MonoBehaviour
 
     public GameObject door;
     private DoorScript doorScript;
-    
-
-
-    // Start is called before the first frame update
+	
+	private bool animEndFlag;
 
     void Start()
     {
-        
         doorScript = door.GetComponent<DoorScript>();
         cameraFade = GetComponent<Animator>();
+		animEndFlag = false;
     }
     void Update()
     {
         if (!flag)
         {
 
-            if (erko)
+            if (!erko)
             {
                 door.GetComponent<BoxCollider>().enabled = false;
                 doorScript.ChangeDoorState();
@@ -90,20 +89,42 @@ public class MicrowaveOpen : MonoBehaviour
     {
         if (other.tag=="SlowArea")
         {
-            
-                fpsScript.amISlowed = true;
+            Debug.Log(other.name);
+            fpsScript.amISlowed = true;
 
             if (!enterTwice)
             {
                 doorScript.ChangeDoorState();
                 enterTwice = true;
             }
-
-            cameraDarken.SetActive(true);
-            cameraFade.Play("camera-darken");
+			
+			cameraDarken.SetActive(true);
+        cameraFade.Play("camera-darken");
+		StartCoroutine(WaitForAnimation( cameraFade ));
+            animEndFlag = true;
+			Debug.Log("Stop!");
+			
 
         }
+		else {
+			if (other.tag=="SlowAreaEnd") {
+				Debug.Log("Animation should have ended");
+				Destroy(cameraFade);
+				SceneManager.UnloadSceneAsync("Part 1");
+				SceneManager.LoadScene("Part 2", LoadSceneMode.Additive);
+				
+			}
+			
+		}
     }
+	
+	private IEnumerator WaitForAnimation ( Animator anim )
+{
+    do
+    {
+        yield return null;
+    } while (anim.GetCurrentAnimatorStateInfo(0).IsName("camera-darken") );
+}
 
 
     

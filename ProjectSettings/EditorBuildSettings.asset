@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/3DForge/Fantasy_Interiors/Demo Scenes/Quick Start Templates/Museum.unity
     guid: 2bec062d2c1d32f448f53096478b5d0f
+  - enabled: 1
+    path: Assets/Scenes/Part 2.unity
+    guid: d2403a622932fbc438eded8cc5fc1365
+  - enabled: 1
+    path: Assets/Scenes/Part 1.unity
+    guid: ab0fbf7fa34c94b4b8d320a2ed168f30
   m_configObjects: {}
