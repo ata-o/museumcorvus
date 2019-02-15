@@ -5,19 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Third Party Assets/SlimUI/Modern Menu 1/Scenes/Menu_Scene.unity
-    guid: 53e0db7c579d54f4da5d360b96be0985
-  - enabled: 0
-    path: Assets/Third Party Assets/SlimUI/Modern Menu 1/Scenes/Second_Scene.unity
-    guid: 4c89c579092f70744885e7d9f6baba7f
-  - enabled: 1
-    path: Assets/3DForge/Fantasy_Interiors/Demo Scenes/Quick Start Templates/Museum.unity
-    guid: 2bec062d2c1d32f448f53096478b5d0f
-  - enabled: 1
-    path: Assets/Scenes/Part 2.unity
-    guid: d2403a622932fbc438eded8cc5fc1365
   - enabled: 1
     path: Assets/Scenes/Part 1.unity
     guid: ab0fbf7fa34c94b4b8d320a2ed168f30
+  - enabled: 1
+    path: Assets/Scenes/Part 2.unity
+    guid: d2403a622932fbc438eded8cc5fc1365
   m_configObjects: {}
