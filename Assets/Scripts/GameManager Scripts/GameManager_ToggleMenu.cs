@@ -12,7 +12,7 @@ namespace MuseumC
 
         void Start()
         {
-            ToggleMenu();
+            
         }
 
         void Update()

@@ -9,6 +9,7 @@ namespace MuseumC
         private GameManager_Master gameManagerMaster;
         private bool isPaused;
 
+
         void OnEnable()
         {
             SetInitialReferences();
@@ -30,7 +31,7 @@ namespace MuseumC
 
         void TogglePause()
         {
-            if (!isPaused)
+            if (isPaused)
             {
                 Time.timeScale = 1;
                 isPaused = false;
