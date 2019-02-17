@@ -7,7 +7,7 @@ public class KnockingDoor : MonoBehaviour
     public float TheDistance;
    // public GameObject ActionDisplay;
    // public GameObject ActionText;
-    public GameObject TheDoor;
+    public GameObject TheDoor; //this is the parent object, prefab
     public AudioSource KnockingSound;
 
     void Update()
@@ -37,6 +37,8 @@ public class KnockingDoor : MonoBehaviour
                 KnockingSound.Play();
                 this.transform.parent.gameObject.tag = "KnockedDoor";
                 Debug.Log(this.transform.parent.gameObject.tag);
+                TheDoor.transform.parent.GetComponent<SpawnWoman>().knockedDoorCount++;
+
             }
         }
     }

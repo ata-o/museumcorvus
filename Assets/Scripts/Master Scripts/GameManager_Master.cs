@@ -11,14 +11,18 @@ namespace MuseumC {
 	public event GameManagerEventHandler RestartLevelEvent;
 	public event GameManagerEventHandler GoToMenuSceneEvent;
 	public event GameManagerEventHandler GameOverEvent;
+
 	
 	public bool isGameOver;
 	public bool isInventoryUIOn;
 	public bool isMenuOn;
-	
-	
-    
-    public void CallEventMenuToggle(){
+
+        void Awake()
+        {
+            
+        }
+
+        public void CallEventMenuToggle(){
 		if (MenuToggleEvent != null) {
 			MenuToggleEvent();
 		}

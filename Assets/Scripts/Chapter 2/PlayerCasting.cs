@@ -15,6 +15,7 @@ public class PlayerCasting : MonoBehaviour {
                 ToTarget = Hit.distance;
                 DistanceFromTarget = ToTarget;
             }
+            
         }   
 
 }

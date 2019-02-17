@@ -111,7 +111,7 @@ public class MicrowaveOpen : MonoBehaviour
 				Debug.Log("Animation should have ended");
 				Destroy(cameraFade);
 				SceneManager.UnloadSceneAsync("Part 1");
-				SceneManager.LoadScene("Part 2", LoadSceneMode.Additive);
+				SceneManager.LoadSceneAsync("Part 2", LoadSceneMode.Additive);
 				
 			}
 			
