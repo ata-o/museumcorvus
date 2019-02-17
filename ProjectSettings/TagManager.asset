@@ -53,6 +53,7 @@ TagManager:
   - Door
   - SlowArea
   - SlowAreaEnd
+  - KnockedDoor
   layers:
   - Default
   - TransparentFX

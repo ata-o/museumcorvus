@@ -35,6 +35,8 @@ public class KnockingDoor : MonoBehaviour
                 // TheDoor.GetComponent<Animation>().Play("Knock");
                 
                 KnockingSound.Play();
+                this.transform.parent.gameObject.tag = "KnockedDoor";
+                Debug.Log(this.transform.parent.gameObject.tag);
             }
         }
     }
