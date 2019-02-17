@@ -47,6 +47,7 @@ Animation:
   m_Animation: {fileID: 7400000, guid: abb9ba7a3caa4ea44adfcedebc243a2d, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: abb9ba7a3caa4ea44adfcedebc243a2d, type: 2}
+  - {fileID: 7400000, guid: cf4ba0a4987a33e49b9242dec9e9eb15, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -480,13 +481,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263170186142954760}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0064, y: 0.0564, z: -0.0333}
+  m_LocalPosition: {x: 0.0067, y: 0.0564, z: -0.0333}
   m_LocalScale: {x: 0.01, y: 0.03, z: 0.01}
   m_Children:
   - {fileID: 2640069}
   m_Father: {fileID: 2640065}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 23.512222, z: 0}
 --- !u!33 &6520488272560738747
 MeshFilter:
   m_ObjectHideFlags: 0
