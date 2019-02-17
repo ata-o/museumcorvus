@@ -320,6 +320,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knockedDoorCount: 0
+  womanSpawned: 0
+  doorOpened: 0
 --- !u!1 &561344430 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2640064, guid: efd5409e586f4d541a5220df9d49c065,
