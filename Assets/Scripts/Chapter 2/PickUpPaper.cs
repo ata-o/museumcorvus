@@ -16,14 +16,14 @@ public class PickUpPaper : MonoBehaviour
     void Update()
     {
 
-    }
+    }    
     void OnMouseDown()
     {
         item.GetComponent<Rigidbody>().useGravity = false;
         item.GetComponent<Rigidbody>().isKinematic = true;
         item.transform.position = guide.transform.position;
         item.transform.parent = tempParent.transform;
-
+        item.transform.rotation = new Quaternion();
     }
     void OnMouseUp()
     {
