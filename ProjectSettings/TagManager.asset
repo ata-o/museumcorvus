@@ -54,6 +54,7 @@ TagManager:
   - SlowArea
   - SlowAreaEnd
   - KnockedDoor
+  - Note1
   layers:
   - Default
   - TransparentFX

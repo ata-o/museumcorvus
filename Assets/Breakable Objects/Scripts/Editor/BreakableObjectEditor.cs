@@ -1,11 +1,7 @@
 using UnityEngine;
 using System;
 using UnityEditor;
-/****************************************
-	BreakableObject Editor v1.09			
-	Copyright 2013 Unluck Software	
- 	www.chemicalbliss.com																																				
-*****************************************/
+
 [CustomEditor(typeof(BreakableObject))]
 [CanEditMultipleObjects]
 

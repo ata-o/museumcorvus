@@ -1,7 +1,4 @@
-/* 	Breakable Object
-	(C) Unluck Software
-	http://www.chemicalbliss.com
-*/
+
 #pragma warning disable 0618
 
 using UnityEngine;
