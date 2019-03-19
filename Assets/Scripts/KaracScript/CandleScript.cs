@@ -26,7 +26,7 @@ public class CandleScript : MonoBehaviour
     public GameObject Candle4_f3;
     public GameObject Candle4_f4;
 
-    private int flames = 15;
+    private int flames = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -39,9 +39,6 @@ public class CandleScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-
 
 
         if (flames == 0)
