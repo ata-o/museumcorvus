@@ -44,7 +44,7 @@ public class MicrowaveOpen : MonoBehaviour
         if (!flag)
         {
 
-            if (erko)
+            if (!erko)
             {
                 door.GetComponent<BoxCollider>().enabled = false;
                 doorScript.ChangeDoorState();
@@ -110,9 +110,9 @@ public class MicrowaveOpen : MonoBehaviour
 			if (other.tag=="SlowAreaEnd") {
 				Debug.Log("Animation should have ended");
 				Destroy(cameraFade);
-				SceneManager.UnloadSceneAsync("Part 1");
+				SceneManager.UnloadSceneAsync("MuseumPart");
                 //SceneManager.LoadSceneAsync("Part 2", LoadSceneMode.Additive);
-                SceneManager.LoadSceneAsync("Part 2", LoadSceneMode.Single);
+                SceneManager.LoadSceneAsync("Demo1 Night", LoadSceneMode.Single);
 				
 			}
 			

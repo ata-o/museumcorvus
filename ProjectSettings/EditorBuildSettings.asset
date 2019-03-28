@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Part 2.unity
     guid: d2403a622932fbc438eded8cc5fc1365
+  - enabled: 1
+    path: Assets/Medieval village/Demo/Demo1 Night.unity
+    guid: 2b935f03347b8dd46abeee307f635e69
+  - enabled: 1
+    path: Assets/Scenes/MuseumPart.unity
+    guid: 0fdbe4330f2027b4096bc727f00c7ce8
   m_configObjects: {}

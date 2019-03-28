@@ -55,6 +55,9 @@ TagManager:
   - SlowAreaEnd
   - KnockedDoor
   - Note1
+  - flame
+  - Q_true
+  - Q_false
   layers:
   - Default
   - TransparentFX
