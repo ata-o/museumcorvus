@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class CanvasFreezeTrigger : MonoBehaviour
 {
     public GameObject QuestionCanvas;
     public GameObject Karacongolos;
-    public CharacterController FPSContoller;
+    public FirstPersonController FPSContoller;
     // public GameObject ScriptOnOff;
     //public GameObject FPSContoller;
     //public Animation Anim;
@@ -17,7 +18,7 @@ public class CanvasFreezeTrigger : MonoBehaviour
     private void Start()
     {
         Karacongolos.SetActive(false);
-        FPSContoller.GetComponent<CharacterController>();
+        FPSContoller.GetComponent<FirstPersonController>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -28,6 +29,7 @@ public class CanvasFreezeTrigger : MonoBehaviour
             Debug.Log("girdi");
             Karacongolos.SetActive(true);
             QuestionCanvas.SetActive(true);
+            FPSContoller.m_UseHeadBob = false;
             FPSContoller.enabled = false;
             //FPSContoller = GameObject.FindWithTag("Player");
             //FPSContoller.GetComponent(FirstPersonController).enable = false;
