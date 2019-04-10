@@ -58,6 +58,9 @@ TagManager:
   - flame
   - Q_true
   - Q_false
+  - Note2
+  - Note3
+  - Note4
   layers:
   - Default
   - TransparentFX

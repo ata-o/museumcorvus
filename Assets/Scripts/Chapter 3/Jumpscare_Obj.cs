@@ -34,7 +34,7 @@ public class Jumpscare_Obj : MonoBehaviour
 
     IEnumerator scare_effect()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1f);
         scary_Daughter.SetActive(false);
     }
 }

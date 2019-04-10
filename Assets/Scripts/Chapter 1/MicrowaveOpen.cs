@@ -44,7 +44,7 @@ public class MicrowaveOpen : MonoBehaviour
         if (!flag)
         {
 
-            if (!erko)
+            if (erko)
             {
                 door.GetComponent<BoxCollider>().enabled = false;
                 doorScript.ChangeDoorState();

@@ -32,10 +32,10 @@ public class Choice : MonoBehaviour
         Choice01.onClick.AddListener(() => { AfterClick(Choice01); });
         Choice02.onClick.AddListener(() => { AfterClick(Choice02); });
         Choice03.onClick.AddListener(() => { AfterClick(Choice03); });
-        Question.GetComponent<Text>().text = "Çimen ne renktir?";
-        Choice01.GetComponentInChildren<Text>().text = "Yeşil";
-        Choice02.GetComponentInChildren<Text>().text = "Sarı";
-        Choice03.GetComponentInChildren<Text>().text = "Mavi";
+        Question.GetComponent<Text>().text = "Who are you running from? Ahhh I know from Al Karisi...Al Karisi only eat puppies, the cleanest ones. The most innocent ones... So you know why? So they will not sink into the darkness. HAHAHAHA you will never understand this you selfish creature!  I am here to question the demons like you and prove to him that you did not deserve to live.";
+        Choice01.GetComponentInChildren<Text>().text = "What do you want from me?";
+        Choice02.GetComponentInChildren<Text>().text = "Who are you?";
+        Choice03.GetComponentInChildren<Text>().text = "I didn't do anything to anyone.";
         Choice01.tag = "Q_true";
         Choice02.tag = "Q_false";
         Choice03.tag = "Q_false";
@@ -49,10 +49,10 @@ public class Choice : MonoBehaviour
 
         if (question_counter == 0)
         {
-            Question.GetComponent<Text>().text = "Question 2";
-            Choice01.GetComponentInChildren<Text>().text = "True";
-            Choice02.GetComponentInChildren<Text>().text = "False";
-            Choice03.GetComponentInChildren<Text>().text = "False";
+            Question.GetComponent<Text>().text = "Don't worry, if you can answer my questions correctly, you're free to go, you impotent creature ... He kills the cleanest, chooses the ones in the whites and liberates them. And why would he do that?";
+            Choice01.GetComponentInChildren<Text>().text = "To save the light";
+            Choice02.GetComponentInChildren<Text>().text = "To put an end to the darkness";
+            Choice03.GetComponentInChildren<Text>().text = "For himself";
             Choice01.tag = "Q_true";
             Choice02.tag = "Q_false";
             Choice03.tag = "Q_false";
@@ -65,10 +65,10 @@ public class Choice : MonoBehaviour
 
         else if (question_counter == 1)
         {
-            Question.GetComponent<Text>().text = "Question 3";
-            Choice01.GetComponentInChildren<Text>().text = "True";
-            Choice02.GetComponentInChildren<Text>().text = "False";
-            Choice03.GetComponentInChildren<Text>().text = "False";
+            Question.GetComponent<Text>().text = "No one can restrain me, I will be there whenever I want. I haven't had any shape whatsoever. In both worlds they are afraid of me, they can not approach. They both want to get rid of me as well. Now tell me, you know me from clay?";
+            Choice01.GetComponentInChildren<Text>().text = "Love";
+            Choice02.GetComponentInChildren<Text>().text = "Fire";
+            Choice03.GetComponentInChildren<Text>().text = "Longing";
             Choice01.tag = "Q_true";
             Choice02.tag = "Q_false";
             Choice03.tag = "Q_false";
@@ -80,10 +80,10 @@ public class Choice : MonoBehaviour
 
         else if (question_counter == 2)
         {
-            Question.GetComponent<Text>().text = "Question 4";
-            Choice01.GetComponentInChildren<Text>().text = "True";
-            Choice02.GetComponentInChildren<Text>().text = "False";
-            Choice03.GetComponentInChildren<Text>().text = "False";
+            Question.GetComponent<Text>().text = "I will never stop at my place. No one can touch me or feel me. I can't see, but no one can escape from me. I can't hear, but no one can talk about me. I encompass the wrath of fear, I make them beg for mercy. I never forgive, but I don't hold a grudge. Who am I?";
+            Choice01.GetComponentInChildren<Text>().text = "Darkness";
+            Choice02.GetComponentInChildren<Text>().text = "Frost";
+            Choice03.GetComponentInChildren<Text>().text = "Karakoncolos";
             Choice01.tag = "Q_true";
             Choice02.tag = "Q_false";
             Choice03.tag = "Q_false";

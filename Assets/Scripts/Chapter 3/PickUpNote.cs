@@ -13,6 +13,10 @@ public class PickUpNote : MonoBehaviour
 
     //Ekranda gösterilecek notlar:
     public Sprite Note1;
+    public Sprite Note2;
+    public Sprite Note3;
+    public Sprite Note4;
+  
 
 
     //Ekranda gözükecek olan yazılar:
@@ -48,6 +52,47 @@ public class PickUpNote : MonoBehaviour
                     
                 }
             }
+
+            if (hit.distance <= distance && hit.collider.gameObject.tag == "Note2")
+            {
+
+                if (Input.GetKeyDown(KeyCode.F))
+                {
+                    NoteScreen.SetActive(true);
+                    note_Image.sprite = Note2;
+                    note_Text.text = note_Strings[0];
+                    Destroy(hit.collider.gameObject);
+
+                }
+            }
+
+            if (hit.distance <= distance && hit.collider.gameObject.tag == "Note3")
+            {
+
+                if (Input.GetKeyDown(KeyCode.F))
+                {
+                    NoteScreen.SetActive(true);
+                    note_Image.sprite = Note3;
+                    note_Text.text = note_Strings[0];
+                    Destroy(hit.collider.gameObject);
+
+                }
+            }
+
+            if (hit.distance <= distance && hit.collider.gameObject.tag == "Note4")
+            {
+
+                if (Input.GetKeyDown(KeyCode.F))
+                {
+                    NoteScreen.SetActive(true);
+                    note_Image.sprite = Note4;
+                    note_Text.text = note_Strings[0];
+                    Destroy(hit.collider.gameObject);
+
+                }
+            }
+
+           
         }
 
         if (Input.GetKey(KeyCode.C))
