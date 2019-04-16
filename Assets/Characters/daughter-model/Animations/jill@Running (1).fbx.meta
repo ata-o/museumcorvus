@@ -263,7 +263,7 @@ ModelImporter:
     4300010: Jill_HiRes_Gown_Geo
     4300012: Jill_HiRes_Teeth_Geo
     4300014: Jill_HiRes_Head_Geo
-    7400000: mixamo.com
+    7400000: Running (1)
     9500000: //RootNode
     13700000: Jill_HiRes_Caruncula_Geo
     13700002: Jill_HiRes_Eyes_Geo
@@ -273,7 +273,37 @@ ModelImporter:
     13700010: Jill_HiRes_Head_Geo
     13700012: Jill_HiRes_Limbs_Geo
     13700014: Jill_HiRes_Teeth_Geo
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jill_HiMidRes_Body_MAT
+    second: {fileID: 2100000, guid: 2c162a6ce679b3b40a4f61f518e0adf1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jill_HiMidRes_EyeSpec_MAT
+    second: {fileID: 2100000, guid: 2c162a6ce679b3b40a4f61f518e0adf1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jill_HiMidRes_Eyes_MAT
+    second: {fileID: 2100000, guid: 2c162a6ce679b3b40a4f61f518e0adf1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jill_HiMidRes_Gown_MAT
+    second: {fileID: 2100000, guid: 2c162a6ce679b3b40a4f61f518e0adf1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jill_HiMidRes_Hair_MAT
+    second: {fileID: 2100000, guid: 2c162a6ce679b3b40a4f61f518e0adf1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jill_HiMidRes_Teeth_MAT
+    second: {fileID: 2100000, guid: 2c162a6ce679b3b40a4f61f518e0adf1, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -300,7 +330,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Running (1)
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 66
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
