@@ -21,7 +21,7 @@ public class KeySpawn : MonoBehaviour
 
         if (Vase_fractures.gameObject.activeInHierarchy)
         {
- Vector3 newPostion = new Vector3(Vase_fractures.transform.position.x, Vase_fractures.transform.position.y, Vase_fractures.transform.position.z);
+            Vector3 newPostion = new Vector3(Vase_fractures.transform.position.x, Vase_fractures.transform.position.y, Vase_fractures.transform.position.z);
             Instantiate(Key, newPostion, Quaternion.identity);
         }
 
