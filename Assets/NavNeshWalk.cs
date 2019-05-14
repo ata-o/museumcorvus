@@ -10,6 +10,7 @@ public class LittleGirlWalk : MonoBehaviour
     public Transform Destination2;
     public Transform Destination3;
     public Transform Destination4;
+    public GameObject GirlBody;
 
     private NavMeshAgent _agent;
     //private Animator _anim;
@@ -52,6 +53,10 @@ public class LittleGirlWalk : MonoBehaviour
                 {
                     _agent.destination = Destination4.position;
                 }
+               if (Vector3.Distance(Destination4.position, transform.position) <= 2.0f)
+                {
+                    Destroy(GirlBody);
+                }
             }
         }
     }
@@ -63,5 +68,5 @@ public class LittleGirlWalk : MonoBehaviour
         //_anim.Play("Walking 1");
         Debug.Log("go");
     }
-
+  
 }
