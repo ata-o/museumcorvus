@@ -21002,7 +21002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81bc16ca95894c34b836ea33671ae46d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Museum
+  sceneName: MuseumPart
   PanelControls: {fileID: 633517233}
   PanelVideo: {fileID: 708452689}
   PanelGame: {fileID: 1936329570}
