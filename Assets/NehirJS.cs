@@ -4,23 +4,20 @@ using UnityEngine;
 
 public class NehirJS : MonoBehaviour
 {
-    private Animator anim;
+
     public GameObject trigger;
+    
 
-    private void OnEnable()
+    private void OnTriggerEnter(Collider other)
     {
-        anim = GetComponent<Animator>();
-    }
-    private IEnumerator WalkInSeconds(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        PlayJumpScare();
-        yield break;
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("collided");
+            trigger.SetActive(true);
+
+        }
+
     }
 
-    private void PlayJumpScare()
-    {
-        anim.Play("Zombie Neck Bite");
-    }
- 
+
 }
