@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class MicrowaveOpen : MonoBehaviour
 {
+    public GameObject alternative_check;
+    public GameObject alt_Blood;
     public bool erko = false;
     public bool kari = false;
     public bool kara = false;
@@ -30,7 +32,7 @@ public class MicrowaveOpen : MonoBehaviour
 
     public GameObject door;
     private DoorScript doorScript;
-	
+    
 	private bool animEndFlag;
 
     void Start()
@@ -41,10 +43,15 @@ public class MicrowaveOpen : MonoBehaviour
     }
     void Update()
     {
+        if (alternative_check.GetComponent<variableCheck>().variable_quiz==50)
+        {
+            alt_Blood.SetActive(true);
+        }
+        
         if (!flag)
         {
 
-            if (erko)
+            if (!erko)
             {
                 door.GetComponent<BoxCollider>().enabled = false;
                 doorScript.ChangeDoorState();
