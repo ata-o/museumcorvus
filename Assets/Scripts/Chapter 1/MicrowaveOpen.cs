@@ -14,6 +14,8 @@ public class MicrowaveOpen : MonoBehaviour
     public bool kara = false;
     public bool nine = false;
 
+    public int surveyResult = 0;
+
     public bool flag = false;
 
     public bool enterTwice = false;
@@ -40,10 +42,17 @@ public class MicrowaveOpen : MonoBehaviour
         doorScript = door.GetComponent<DoorScript>();
         cameraFade = GetComponent<Animator>();
 		animEndFlag = false;
+
+        phobiaQuiz results = new phobiaQuiz();
+
+        results.LoadSurvey();
+
+        surveyResult = results.personPoint;
+        
     }
     void Update()
     {
-        if (alternative_check.GetComponent<variableCheck>().variable_quiz==50)
+        if (surveyResult == 50)
         {
             alt_Blood.SetActive(true);
         }

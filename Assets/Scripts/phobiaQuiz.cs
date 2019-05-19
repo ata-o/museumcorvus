@@ -5,29 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class phobiaQuiz : MonoBehaviour
 {
-    public float personPoint=0;
-    public GameObject variablePrefab;
+    public int personPoint=0;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Debug.Log(personPoint);
-
-        if (personPoint==70)
-        {
-            SceneManager.UnloadScene("PhobiaQuiz");
-            SceneManager.LoadScene("MuseumPart", LoadSceneMode.Single);
-        }
-    }
-
-    public void buttonOnClick()
+    public void AddPoints()
     {
         personPoint += 10;
+    }
+
+    public void SaveSurvey()
+    {
+        SaveSystem.SaveSurvey(this);
+        SceneManager.UnloadScene("PhobiaQuiz");
+        SceneManager.LoadScene("MuseumPart", LoadSceneMode.Single);
+    }
+
+    public void LoadSurvey()
+    {
+        SurveyData data = SaveSystem.LoadSurvey();
+
+        personPoint = data.surveyPoints;
     }
 }
