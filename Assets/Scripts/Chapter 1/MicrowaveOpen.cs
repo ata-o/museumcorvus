@@ -9,12 +9,18 @@ public class MicrowaveOpen : MonoBehaviour
 {
     public GameObject alternative_check;
     public GameObject alt_Blood;
+    public GameObject alt_Spider;
     public bool erko = false;
     public bool kari = false;
     public bool kara = false;
     public bool nine = false;
 
     public int surveyResult = 0;
+
+    public bool toggleBlood = false;
+    public bool toggleSpider = false;
+    public bool toggleStorm = false;
+    public bool toggleAmbiance = false;
 
     public bool flag = false;
 
@@ -48,14 +54,49 @@ public class MicrowaveOpen : MonoBehaviour
         results.LoadSurvey();
 
         surveyResult = results.personPoint;
+
+        toggleBlood = results.blood;
+        toggleSpider = results.spider;
+        toggleStorm = results.storm;
+        toggleAmbiance = results.ambiance;
+
+        
+
         
     }
     void Update()
     {
-        if (surveyResult == 50)
+
+        if (toggleBlood)
+        {
+            alt_Blood.SetActive(true);
+        
+        }
+
+         if (toggleSpider)
+        {
+            alt_Spider.SetActive(true);
+        }
+        if (toggleStorm)
+        {
+
+        }
+         if (toggleAmbiance)
+        {
+
+        }
+
+    
+
+        /*if (surveyResult <= 50)
         {
             alt_Blood.SetActive(true);
         }
+
+        else if (surveyResult > 50)
+        {
+            alt_Spider.SetActive(true);
+        }*/
         
         if (!flag)
         {
